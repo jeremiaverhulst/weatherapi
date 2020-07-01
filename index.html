@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather API</h1>
+        <p id="header-tagline">See the weather forecast of the next 5 days of any city you like.</p>
+        <p id="header-disclaimer">(this forecast only shows the average per day for now)</p>
+        <section id="searchInput">
+            <label for="searchCityInput">City name:</label>
+            <input type="search" id="searchCityInput" name="searchCity">
+            <button id="searchCityBtn">Show me</button>
+        </section>
+        <p id="searchInputValidation"></p>
+    </header>
+    <main id="searchResult">
+        <section>
+            <h2><span id="cityNameResult"></span> - the next 5 days</h2>
+            <template id="template-dayWeather">
+            <article class="dayWeather">
+                <h3 class="dateDay"></h3>
+                <h4>Max:<span class="tempMax"></span></h4>
+                <h5>Min:<span class="tempMin"></span></h5>
+                <img class="weatherIcon" src="" alt="">
+            </article>
+            </template>
+            <section id="target"></section>
+        </section>
+    </main>
+    <footer>
+        <p>Made in 2020 by Jeremia Verhulst</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
